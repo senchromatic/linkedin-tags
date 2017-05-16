@@ -33,21 +33,19 @@ class LinkedIn:
 	def load(self, url, condition=None, scroll=False):
 		self.browser.get(url)
 		self.wait(condition, scroll)
-
+	
 	def make_soup(self, url, condition=None, scroll=False):
 		self.load(url, condition, scroll)
 		html = self.browser.page_source
 		return BeautifulSoup(html, 'lxml')
 	
+	def login(self):
+		print('Please enter your login credentials')
+		self.load(LinkedIn.DOMAIN, (By.PARTIAL_LINK_TEXT, LinkedIn.WELCOME_TEXT))
+	
 	def download_profile(self, url):
 		page = self.make_soup(url, (By.CLASS_NAME, 'core-rail'), True)
 		profile = page.find('div', {'class' : 'core-rail', 'role' : 'main'})
 		return profile
-	
-	def login(self):
-		print('Please enter your login credentials')
-		self.load(LinkedIn.DOMAIN, (By.PARTIAL_LINK_TEXT, LinkedIn.WELCOME_TEXT))
 
-def extract_tokens(soup):
-	return soup.text.split()
 
