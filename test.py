@@ -10,9 +10,9 @@ consecutive_fails = 0
 for page in xrange(MAX_PAGES):
 	print('Downloading page ' + str(page))
 	if retriever.download(page):
-		consecutive_fails += 1
-	else:
 		consecutive_fails = 0
+	else:
+		consecutive_fails += 1
 	if consecutive_fails > FAILSAFE_THRESHOLD:
 		print('Unable to find more profiles')
 		break
