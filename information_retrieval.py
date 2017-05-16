@@ -5,6 +5,8 @@ from document_manager import Database
 
 class Retriever:
 	RESULTS_PER_PAGE = 10
+	MAX_PAGES = 1000
+	FAILSAFE_THRESHOLD = 10
 	
 	def __init__(self, query=None):
 		Database.setup_encoding()
@@ -26,4 +28,18 @@ class Retriever:
 		if urls:
 			return True
 		return False
+	
+	def download_all_data(self, query=None):
+		if query:
+			self.query = query
+		consecutive_fails = 0
+		for page in xrange(Retriever.MAX_PAGES):
+			print('Downloading page ' + str(page))
+			if self.download(page):
+				consecutive_fails = 0
+			else:
+				consecutive_fails += 1
+			if consecutive_fails > Retriever.FAILSAFE_THRESHOLD:
+				print('Unable to find more profiles')
+				break
 
