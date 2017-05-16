@@ -14,6 +14,8 @@ class Google:
 		urls = []
 		for result in results:
 			link = result.find('cite')
+			if not link:
+				continue
 			url = link.text
 			if Google.USER_SUBDOMAIN in url:
 				urls.append(url)
