@@ -15,7 +15,7 @@ class Google:
 	def get_profile_urls(query, start):
 		start_value = str(start)
 		soup = get_soup(Google.BASE_URL + query + Google.START_NAME + start_value)
-		results = soup.findAll('div', {'class':'g'})
+		results = soup.findAll('div', {'class' : 'g'})
 		urls = []
 		for result in results:
 			link = result.find('cite')
