@@ -24,7 +24,7 @@ class Retriever:
 	# start_page : non-negative integer
 	def download(self, start_page):  
 		index = start_page * Retriever.RESULTS_PER_PAGE
-		urls = google.get_profile_urls(self.query, index)
+		urls = self.google.get_profile_urls(self.query, index)
 		self.process(urls)
 		if urls:
 			return True
