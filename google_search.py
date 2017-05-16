@@ -4,7 +4,7 @@ from time import sleep
 
 
 class Google:
-	BASE_URL = 'https://www.google.com/search?q=site%3Alinkedin.com+'
+	BASE_URL = 'https://www.google.com/search?q=site%3Alinkedin.com/in+'
 	START_NAME = '&start='
 	USER_SUBDOMAIN = 'linkedin.com/in/'
 	SAFE_DELAY = 5.0
@@ -12,7 +12,6 @@ class Google:
 	def __init__(self):
 		self.last_visit = None
 	
-	@staticmethod
 	def get_profile_urls(self, query, start):
 		if self.last_visit:
 			time_difference = datetime.now() - self.last_visit
