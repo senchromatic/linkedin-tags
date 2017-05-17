@@ -1,5 +1,4 @@
 .fuse_hidden*
 geckodriver.log
-data/*.txt
 src/offline/*.pyc
 src/online/*.pyc

@@ -4,7 +4,7 @@ import requests
 import sys
 
 class Database:
-	OUTPUT_DIRECTORY = "data/"
+	OUTPUT_DIRECTORY = "raw/"
 	
 	@staticmethod
 	def setup_encoding():

@@ -17,7 +17,15 @@ class LinkedIn:
 	
 	def login(self):
 		print('Please enter your login credentials')
+		# temp (backup)
+		normal_scroll = LinkedIn.SCROLL
+		normal_delay = LinkedIn.RELOAD_DELAY
+		LinkedIn.SCROLL = False
+		LinkedIn.RELOAD_DELAY = 0.0
 		Utility.load(self, LinkedIn.DOMAIN, (By.PARTIAL_LINK_TEXT, LinkedIn.WELCOME_TEXT))
+		# restore
+		LinkedIn.SCROLL = normal_scroll
+		LinkedIn.RELOAD_DELAY = normal_delay
 	
 	def download_profile(self, url):
 		page = Utility.make_soup(self, url, (By.CLASS_NAME, 'core-rail'))
