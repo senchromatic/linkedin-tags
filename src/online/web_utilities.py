@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from time import sleep
@@ -69,6 +70,9 @@ class Utility:
 			if Utility.is_profile_unavailable(caller):
 				return None
 			Utility.load(caller, url, condition)
+		except WebDriverException as exception:
+			# can't load page
+			return None
 		return True
 
 	@staticmethod
