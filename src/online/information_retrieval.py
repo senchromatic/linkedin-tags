@@ -8,25 +8,35 @@ class Retriever:
 	RESULTS_PER_PAGE = 10
 	MAX_PAGES = 1000
 	FAILSAFE_THRESHOLD = 10
-	PROXY_SOCKET = '149.215.113.110:70'
+	PROXY_HOST = '52.36.219.41'
+	PROXY_PORT = '8888'
 	PROXY_SETTINGS = {
-		'httpProxy' : PROXY_SOCKET,
-    	'ftpProxy' : PROXY_SOCKET,
-		'sslProxy' : PROXY_SOCKET,
-    	'noProxy' : None,
-    	'proxyType' : 'MANUAL',
-    	'class' : 'org.openqa.selenium.Proxy',
-    	'autodetect' : False
+		'network.proxy.type' : 1,
+		'network.proxy.http' : PROXY_HOST,
+		'network.proxy.http_port' : int(PROXY_PORT),
+		'general.useragent.override' : 'whater_useragent'
 	}
-	
+
 	@staticmethod
 	def setup_proxy():
-		webdriver.DesiredCapabilities.FIREFOX['proxy'] = Retriever.PROXY_SETTINGS
-		return webdriver.Firefox()
+		fp = webdriver.FirefoxProfile()
+		for key,value in Retriever.PROXY_SETTINGS:
+			fp.set_preference(key, value)
+		fp.update_preferences()
+		return webdriver.Firefox(firefox_profile=fp)
+
+	@staticmethod
+	def test_proxy(browser):
+		browser.get(r'http://www.whatsmyip.org/')
+		raw_input('Press enter')
 	
-	def __init__(self, query=None):
+	def __init__(self, use_proxy=False, query=None):
 		Database.setup_encoding()
-		self.browser = Retriever.setup_proxy()
+		if use_proxy:
+			self.browser = Retriever.setup_proxy()
+			self.test_proxy(self.browser)
+		else:
+			self.browser = webdriver.Firefox()
 		self.google = Google(self.browser)
 		self.linkedin = LinkedIn(self.browser)
 		self.query = query
@@ -40,7 +50,7 @@ class Retriever:
 			Database.save_local(tokens, self.query)
 	
 	# returns whether the operation was successful
-	# start_page : non-negative integer
+	# (start_page : non-negative integer)
 	def download(self, start_page):  
 		index = start_page * Retriever.RESULTS_PER_PAGE
 		urls = self.google.get_profile_urls(self.query, index)
