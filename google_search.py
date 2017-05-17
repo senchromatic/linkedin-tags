@@ -1,43 +1,23 @@
-from bs4 import BeautifulSoup
 from datetime import datetime
 from document_manager import Database
-from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
 from time import sleep
+from web_utilities import Utility
 
 
 class Google:
 	BASE_URL = 'https://www.google.com/search?q=site%3Alinkedin.com/in+'
 	START_NAME = '&start='
 	USER_SUBDOMAIN = 'linkedin.com/in/'
-	MAX_TIMEOUT = 60
-	SAFE_DELAY = 5.0
+	MAX_TIMEOUT = 20
+	SAFE_DELAY = 10.0
+	RELOAD_DELAY = 1.0
+	MICROSLEEPS = 10
+	SCROLL = False
 	
 	def __init__(self, browser):
 		self.last_visit = None
 		self.browser = browser
-	
-	def wait(self):
-		ready = EC.presence_of_element_located((By.CLASS_NAME, 'g'))
-		try:
-			WebDriverWait(self.browser, Google.MAX_TIMEOUT).until(ready)
-			sleep(Google.SAFE_DELAY)
-			return True
-		except TimeoutException as exception:
-			return False		
-	
-	def load(self, url):
-		successful = None
-		while not successful:
-			self.browser.get(url)
-			successful = self.wait()
-	
-	def make_soup(self, url):
-		self.load(url)
-		html = self.browser.page_source
-		return BeautifulSoup(html, 'lxml')
 	
 	def get_profile_urls(self, query, start):
 		if self.last_visit:
@@ -46,7 +26,7 @@ class Google:
 			sleep(remaining)
 		self.last_visit = datetime.now()
 		start_value = str(start)
-		soup = self.make_soup(Google.BASE_URL + query + Google.START_NAME + start_value)
+		soup = Utility.make_soup(self, Google.BASE_URL + query + Google.START_NAME + start_value, (By.CLASS_NAME, 'g'))
 		results = soup.findAll('div', {'class' : 'g'})
 		urls = []
 		for result in results:
