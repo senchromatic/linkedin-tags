@@ -62,12 +62,12 @@ class Utility:
 	@staticmethod
 	def load(caller, url, condition=None):
 		Utility.check_captcha(caller.browser.page_source)
-		if Utility.is_profile_unavailable(caller):
-			return None
 		try:
 			caller.browser.get(url)
 			Utility.wait(caller, condition)
 		except TimeoutException as exception:
+			if Utility.is_profile_unavailable(caller):
+				return None
 			Utility.load(caller, url, condition)
 		return True
 
