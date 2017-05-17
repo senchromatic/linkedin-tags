@@ -1,15 +1,14 @@
-Install:
+0. Install:
 $ bash install.sh
 
-Download raw data:
+1. Download raw data:
 $ python src/online/download_data.py
 
-Data cleaning:
+2. Clean raw data:
 $ python src/offline/data_cleaning.py
 
-Analyze:
+3. Process cleaned data:
+$ python src/offline/data_processing.py
+
+4. Analyze processed data:
 $ python src/offline/analyze.py
-
-
-
-
