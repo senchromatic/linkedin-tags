@@ -1,8 +1,11 @@
 Install:
 $ bash install.sh
 
-Download data:
+Download raw data:
 $ python src/online/download_data.py
+
+Data cleaning:
+$ python src/offline/data_cleaning.py
 
 Analyze:
 $ python src/offline/analyze.py

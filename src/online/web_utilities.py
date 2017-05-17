@@ -11,24 +11,24 @@ class Utility:
 		if not condition:
 			return True
 		ready = EC.presence_of_element_located(condition)
-		try:
-			WebDriverWait(caller.browser, caller.MAX_TIMEOUT).until(ready)
-			for microsleep in xrange(1, 1+caller.MICROSLEEPS):
-				if caller.SCROLL:
-					fraction = str(microsleep) + '/' + str(caller.MICROSLEEPS)
-					scroll_script = 'window.scrollTo(0, document.body.scrollHeight*' + fraction + ');'
-					caller.browser.execute_script(scroll_script)
-				sleep(caller.RELOAD_DELAY / caller.MICROSLEEPS)
-			return True
-		except TimeoutException as exception:
-			return False
+		WebDriverWait(caller.browser, caller.MAX_TIMEOUT).until(ready)
+		for microsleep in xrange(1, 1+caller.MICROSLEEPS):
+			if caller.SCROLL:
+				fraction = str(microsleep) + '/' + str(caller.MICROSLEEPS)
+				scroll_script = 'window.scrollTo(0, document.body.scrollHeight*' + fraction + ');'
+				caller.browser.execute_script(scroll_script)
+			sleep(caller.RELOAD_DELAY / caller.MICROSLEEPS)
 	
 	@staticmethod
 	def load(caller, url, condition=None):
 		successful = None
 		while not successful:
-			caller.browser.get(url)
-			successful = Utility.wait(caller, condition)
+			try:
+				caller.browser.get(url)
+				Utility.wait(caller, condition)
+				successful = True
+			except TimeoutException as exception:
+				return False
 	
 	@staticmethod
 	def make_soup(caller, url, condition=None):
