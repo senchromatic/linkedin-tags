@@ -8,10 +8,25 @@ class Retriever:
 	RESULTS_PER_PAGE = 10
 	MAX_PAGES = 1000
 	FAILSAFE_THRESHOLD = 10
+	PROXY_SOCKET = '149.215.113.110:70'
+	PROXY_SETTINGS = {
+		'httpProxy' : PROXY_SOCKET,
+    	'ftpProxy' : PROXY_SOCKET,
+		'sslProxy' : PROXY_SOCKET,
+    	'noProxy' : None,
+    	'proxyType' : 'MANUAL',
+    	'class' : 'org.openqa.selenium.Proxy',
+    	'autodetect' : False
+	}
+	
+	@staticmethod
+	def setup_proxy():
+		webdriver.DesiredCapabilities.FIREFOX['proxy'] = Retriever.PROXY_SETTINGS
+		return webdriver.Firefox()
 	
 	def __init__(self, query=None):
 		Database.setup_encoding()
-		self.browser = webdriver.Firefox()
+		self.browser = Retriever.setup_proxy()
 		self.google = Google(self.browser)
 		self.linkedin = LinkedIn(self.browser)
 		self.query = query
