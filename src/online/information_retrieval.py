@@ -1,4 +1,4 @@
-from google_search import Google
+from bing_search import Bing
 from linkedin_service import LinkedIn
 from document_manager import Database
 from selenium import webdriver
@@ -37,7 +37,7 @@ class Retriever:
 			self.test_proxy(self.browser)
 		else:
 			self.browser = webdriver.Firefox()
-		self.google = Google(self.browser)
+		self.bing = Bing(self.browser)
 		self.linkedin = LinkedIn(self.browser)
 		self.query = query
 	
@@ -53,7 +53,7 @@ class Retriever:
 	# (start_page : non-negative integer)
 	def download(self, start_page):  
 		index = start_page * Retriever.RESULTS_PER_PAGE
-		urls = self.google.get_profile_urls(self.query, index)
+		urls = self.bing.get_profile_urls(self.query, index)
 		self.process(urls)
 		if urls:
 			return True

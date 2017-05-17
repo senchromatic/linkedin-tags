@@ -14,6 +14,7 @@ class Utility:
 		r"CaptchaV2ChallengeForm",
 		r"uas-consumer-captcha-v2"
 	]
+	BAD_PAGES = ['/in/unavailable']
 	
 	@staticmethod
 	def wait(caller, condition=None):
@@ -52,13 +53,23 @@ class Utility:
 		return False
 	
 	@staticmethod
+	def is_profile_unavailable(caller):
+		for bad_page in Utility.BAD_PAGES:
+			if bad_page in caller.browser.current_url:
+				return True
+		return False
+
+	@staticmethod
 	def load(caller, url, condition=None):
 		Utility.check_captcha(caller.browser.page_source)
+		if Utility.is_profile_unavailable(caller):
+			return None
 		try:
 			caller.browser.get(url)
 			Utility.wait(caller, condition)
 		except TimeoutException as exception:
 			Utility.load(caller, url, condition)
+		return True
 
 	@staticmethod
 	def is_false_lead(caller):
@@ -72,7 +83,8 @@ class Utility:
 
 	@staticmethod
 	def make_soup(caller, url, condition=None):
-		Utility.load(caller, url, condition)
+		if not Utility.load(caller, url, condition):
+			return None
 		html = caller.browser.page_source
 		if Utility.is_false_lead(caller):
 			return None

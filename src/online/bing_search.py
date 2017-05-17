@@ -5,9 +5,9 @@ from time import sleep
 from web_utilities import Utility
 
 
-class Google:
-	BASE_URL = 'https://www.google.com/search?q=site%3Alinkedin.com/in+'
-	START_NAME = '&start='
+class Bing:
+	BASE_URL = 'https://bing.com/?q=site:linkedin.com/in+'
+	START_NAME = '&first='
 	USER_SUBDOMAIN = 'linkedin.com/in/'
 	MAX_TIMEOUT = 20
 	SAFE_DELAY = 10.0
@@ -22,18 +22,18 @@ class Google:
 	def get_profile_urls(self, query, start):
 		if self.last_visit:
 			time_difference = datetime.now() - self.last_visit
-			remaining = max(0, Google.SAFE_DELAY - time_difference.total_seconds())
+			remaining = max(0, Bing.SAFE_DELAY - time_difference.total_seconds())
 			sleep(remaining)
 		self.last_visit = datetime.now()
 		start_value = str(start)
-		soup = Utility.make_soup(self, Google.BASE_URL + query + Google.START_NAME + start_value, (By.CLASS_NAME, 'g'))
-		results = soup.findAll('div', {'class' : 'g'})
+		soup = Utility.make_soup(self, Bing.BASE_URL + query + Bing.START_NAME + start_value, (By.CLASS_NAME, 'b_algo'))
+		results = soup.findAll('li', {'class' : 'b_algo'})
 		urls = []
 		for result in results:
 			link = result.find('cite')
 			if not link:
 				continue
 			url = link.text
-			if Google.USER_SUBDOMAIN in url:
+			if Bing.USER_SUBDOMAIN in url:
 				urls.append(url)
 		return urls
