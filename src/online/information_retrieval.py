@@ -19,6 +19,8 @@ class Retriever:
 	def process(self, urls):
 		for url in urls:
 			profile = self.linkedin.download_profile(url)
+			if not profile:
+				continue
 			tokens = Database.tokenize(profile)
 			Database.save_local(tokens, self.query)
 	

@@ -1,13 +1,12 @@
+from directories import Directories
 from os import listdir
 from string import punctuation
 
+
 class Cleaner:
-	RAW_FOLDER = 'raw/'
-	CLEAN_FOLDER = 'cleaned/'
-	
 	@staticmethod
 	def enlist_raws():
-		return listdir(Cleaner.RAW_FOLDER)  # relative filenames
+		return listdir(Directories.RAW_FOLDER)  # relative filenames
 	
 	@staticmethod
 	def clean_string(original):
@@ -16,8 +15,8 @@ class Cleaner:
 	
 	@staticmethod
 	def clean_raw(filename):
-		with open(Cleaner.RAW_FOLDER + filename) as input:
-			with open(Cleaner.CLEAN_FOLDER + filename, 'w') as output:
+		with open(Directories.RAW_FOLDER + filename) as input:
+			with open(Directories.CLEANED_FOLDER + filename, 'w') as output:
 				for line in input:
 					output.write(Cleaner.clean_string(line))
 	

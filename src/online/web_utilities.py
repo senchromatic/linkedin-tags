@@ -6,6 +6,8 @@ from time import sleep
 
 
 class Utility:
+	FALSE_LEADS = ['This profile is not available']
+
 	@staticmethod
 	def wait(caller, condition=None):
 		if not condition:
@@ -34,6 +36,9 @@ class Utility:
 	def make_soup(caller, url, condition=None):
 		Utility.load(caller, url, condition)
 		html = caller.browser.page_source
+		for false_lead in Utility.FALSE_LEADS:
+			if false_lead in html:
+				return None
 		return BeautifulSoup(html, 'lxml')
 	
 

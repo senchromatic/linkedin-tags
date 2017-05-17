@@ -29,6 +29,8 @@ class LinkedIn:
 	
 	def download_profile(self, url):
 		page = Utility.make_soup(self, url, (By.CLASS_NAME, 'core-rail'))
+		if not page:
+			return page
 		profile = page.find('div', {'class' : 'core-rail', 'role' : 'main'})
 		return profile
 
