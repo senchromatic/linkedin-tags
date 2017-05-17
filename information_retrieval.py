@@ -1,6 +1,7 @@
 from google_search import Google
 from linkedin_service import LinkedIn
 from document_manager import Database
+from selenium import webdriver
 
 
 class Retriever:
@@ -10,8 +11,9 @@ class Retriever:
 	
 	def __init__(self, query=None):
 		Database.setup_encoding()
-		self.google = Google()
-		self.linkedin = LinkedIn()
+		self.browser = webdriver.Firefox()
+		self.google = Google(self.browser)
+		self.linkedin = LinkedIn(self.browser)
 		self.query = query
 	
 	def process(self, urls):

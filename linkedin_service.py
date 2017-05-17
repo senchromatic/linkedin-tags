@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 from getpass import getuser, getpass
-from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -15,8 +14,8 @@ class LinkedIn:
 	SAFE_DELAY = 5.0
 	MICROSLEEPS = 100
 	
-	def __init__(self):
-		self.browser = webdriver.Firefox()
+	def __init__(self, browser):
+		self.browser = browser
 		self.login()
 	
 	def wait(self, condition, scroll=False):

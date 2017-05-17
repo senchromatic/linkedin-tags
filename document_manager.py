@@ -12,11 +12,6 @@ class Database:
 		sys.setdefaultencoding('utf-8')
 	
 	@staticmethod
-	def download_dom(url):
-		html = requests.get(url).content
-		return BeautifulSoup(html, 'lxml')
-	
-	@staticmethod
 	def tokenize(dom):
 		return dom.text.split()
 	
