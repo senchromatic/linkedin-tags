@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 from getpass import getuser, getpass
 from selenium import webdriver
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
@@ -31,7 +32,7 @@ class LinkedIn:
 					self.browser.execute_script(scroll_script)
 				sleep(LinkedIn.SAFE_DELAY / LinkedIn.MICROSLEEPS)
 			return True
-		except TimeOutException as exception:
+		except TimeoutException as exception:
 			return False
 	
 	def load(self, url, condition=None, scroll=False):
