@@ -1,4 +1,4 @@
 .fuse_hidden*
-*.pyc
+src/*.pyc
 geckodriver.log
 data/*.txt

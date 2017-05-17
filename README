@@ -1,4 +1,9 @@
 Install:
 $ bash install.sh
 
+Download data:
+$ python src/download_data.py
+
+
+
 
