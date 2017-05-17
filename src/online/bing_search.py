@@ -27,6 +27,8 @@ class Bing:
 		self.last_visit = datetime.now()
 		start_value = str(start)
 		soup = Utility.make_soup(self, Bing.BASE_URL + query + Bing.START_NAME + start_value, (By.CLASS_NAME, 'b_algo'))
+		if not soup:
+			return self.get_profile_urls(query, start)
 		results = soup.findAll('li', {'class' : 'b_algo'})
 		urls = []
 		for result in results:
