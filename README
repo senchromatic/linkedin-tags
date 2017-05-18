@@ -12,3 +12,10 @@ $ python src/offline/data_processing.py
 
 4. Analyze processed data:
 $ python src/offline/analyze.py
+
+5. Combine analyzed results:
+$ python src/offline/combine_results.py
+
+6. Show combined results:
+$ less results/combined/*.txt
+
