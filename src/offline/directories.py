@@ -7,6 +7,7 @@ class Directories:
 	PROCESSED_FOLDER = 'processed/'
 	RESULTS_FOLDER = 'results/'
 	COMBINED_SUBFOLDER = 'combined/'
+	FILTERED_FOLDER = 'filtered/'
 	HEADER_ROW = 'term,likelihood_ratio\n'
 	IGNORE = ['.keep']
 	
