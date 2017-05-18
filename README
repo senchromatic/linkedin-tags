@@ -1,12 +1,9 @@
 0. Install:
 $ bash install.sh
 
-1. Download raw data (multiple instances can be run simultaneously):
+1. Download raw data:
 $ python src/online/download_data.py
 $ "data+scientist"
-$ python src/online/download_data.py
-$ "software+architect"
-...
 
 2. Clean raw data:
 $ python src/offline/data_cleaning.py
