@@ -7,8 +7,8 @@ class Directories:
 	PROCESSED_FOLDER = 'processed/'
 	RESULTS_FOLDER = 'results/'
 	COMBINED_SUBFOLDER = 'combined/'
-	
 	HEADER_ROW = 'term,likelihood_ratio\n'
+	IGNORE = ['.keep']
 	
 	@staticmethod
 	def subdirectory_name(num_words):
@@ -18,3 +18,7 @@ class Directories:
 	def create_directory(target):
 		if not path.exists(target):
 			makedirs(target)
+	
+	@staticmethod
+	def is_data(filename):
+		return filename not in Directories.IGNORE

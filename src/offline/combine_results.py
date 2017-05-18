@@ -10,9 +10,9 @@ class Combiner:
 	
 	@staticmethod
 	def enlist_analyzed():
-		target_dir = Directories.RESULTS_FOLDER + Directories.subdirectory_name(1)
-		return listdir(target_dir)  # relative filenames
-
+		all_files = listdir(Directories.RESULTS_FOLDER + Directories.subdirectory_name(1))
+		return filter(Directories.is_data, all_files)
+	
 	def process(self, line):
 		term_ratio = line.split(',')
 		if len(term_ratio) != 2:
@@ -30,6 +30,7 @@ class Combiner:
 	
 	def save(self):
 		target_dir = Directories.RESULTS_FOLDER + Directories.COMBINED_SUBFOLDER
+		Directories.create_directory(target_dir)
 		with open(target_dir + self.document, 'w') as output:
 			output.write(Directories.HEADER_ROW)
 			ranklist = sorted(self.corpus.items(), key=itemgetter(1), reverse=True)

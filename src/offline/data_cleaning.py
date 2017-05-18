@@ -6,7 +6,8 @@ from string import punctuation
 class Cleaner:
 	@staticmethod
 	def enlist_raws():
-		return listdir(Directories.RAW_FOLDER)  # relative filenames
+		all_files = listdir(Directories.RAW_FOLDER)  # relative filenames
+		return filter(Directories.is_data, all_files)
 	
 	@staticmethod
 	def clean_string(original):

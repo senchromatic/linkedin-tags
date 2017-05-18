@@ -51,9 +51,9 @@ class Analysis:
 	
 	@staticmethod
 	def enlist_processed(num_words):
-		target_dir = Directories.PROCESSED_FOLDER + Directories.subdirectory_name(num_words)
-		return listdir(target_dir)  # relative filenames
-
+		all_files = listdir(Directories.PROCESSED_FOLDER + Directories.subdirectory_name(num_words))
+		return filter(Directories.is_data, all_files)
+	
 	def load_all_documents(self):
 		for document in Analysis.enlist_processed(self.num_words):
 			self.load_proportions(document)
