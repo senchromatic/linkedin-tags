@@ -22,7 +22,7 @@ class Analysis:
 	@staticmethod
 	def enlist_processed(num_words):
 		target_dir = Directories.PROCESSED_FOLDER + Directories.subdirectory_name(num_words)
-		return Directories.data_filesnames(target_dir)
+		return Directories.data_filenames(target_dir)
 	
 	# cached storage
 	def load_proportions(self, document):
