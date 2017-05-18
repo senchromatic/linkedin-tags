@@ -114,7 +114,7 @@ class Analysis:
 if __name__ == '__main__':
 	max_num_words = input('Maximum number of consecutive words to consider as a term: ')
 	for num_words in xrange(max_num_words):
-		print('processing ' + Directories.subdirectory_name(num_words+1) + '...')
+		print('analyzing ' + Directories.subdirectory_name(num_words+1) + '...')
 		analysis = Analysis(num_words+1)
 		analysis.load_all_documents()
 		analysis.generate_all_results()

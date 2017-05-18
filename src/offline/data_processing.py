@@ -66,11 +66,13 @@ class Processor:
 	
 	def process_all_cleaned(self):
 		for filename in Processor.enlist_cleaned():
+			print('\t' + filename)
 			self.process_cleaned(filename)
 
 if __name__ == '__main__':
 	max_num_words = input('Maximum number of consecutive words to consider as a term: ')
 	processor = Processor()
 	for num_words in xrange(max_num_words):
+		print('processing ' + Directories.subdirectory_name(num_words+1) + '...')
 		processor.num_words = num_words+1
 		processor.process_all_cleaned()
