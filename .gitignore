@@ -2,3 +2,6 @@
 geckodriver.log
 src/offline/*.pyc
 src/online/*.pyc
+cleaned/
+processed/
+results/
