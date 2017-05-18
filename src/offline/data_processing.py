@@ -70,6 +70,7 @@ class Processor:
 			print('\t' + filename)
 			self.process_cleaned(filename)
 
+
 if __name__ == '__main__':
 	max_num_words = input('Maximum number of consecutive words to consider as a term: ')
 	processor = Processor()

@@ -3,6 +3,7 @@ import re
 import requests
 import sys
 
+
 class Database:
 	OUTPUT_DIRECTORY = "raw/"
 	

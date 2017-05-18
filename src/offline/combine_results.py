@@ -37,6 +37,7 @@ class Combiner:
 			for term_ratio in ranklist:
 				output.write(term_ratio[0] + ',' + str(term_ratio[1]) + '\n')
 
+
 if __name__ == '__main__':
 	max_num_words = input('Maximum number of consecutive words to consider as a term: ')
 	documents = Combiner.enlist_analyzed()

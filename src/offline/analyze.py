@@ -111,6 +111,7 @@ class Analysis:
 					ratio = term_ratio[1]
 					output.write(term + ',' + str(ratio) + '\n')
 
+
 if __name__ == '__main__':
 	max_num_words = input('Maximum number of consecutive words to consider as a term: ')
 	for num_words in xrange(max_num_words):

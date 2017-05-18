@@ -26,5 +26,6 @@ class Cleaner:
 		for filename in Cleaner.enlist_raws():
 			Cleaner.clean_raw(filename)
 
+
 if __name__ == '__main__':
 	Cleaner.clean_all_raws()

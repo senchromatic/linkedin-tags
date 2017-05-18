@@ -17,7 +17,6 @@ class Bing:
 	SCROLL = False
 	ILLEGAL_URLS = ['^.+\.\./$']
 
-	
 	def __init__(self, browser):
 		self.last_visit = None
 		self.browser = browser
