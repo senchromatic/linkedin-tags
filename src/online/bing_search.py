@@ -3,6 +3,7 @@ from document_manager import Database
 from selenium.webdriver.common.by import By
 from time import sleep
 from web_utilities import Utility
+import re
 
 
 class Bing:
@@ -14,6 +15,8 @@ class Bing:
 	RELOAD_DELAY = 1.0
 	MICROSLEEPS = 10
 	SCROLL = False
+	ILLEGAL_URLS = ['^.+\.\./$']
+
 	
 	def __init__(self, browser):
 		self.last_visit = None
@@ -36,6 +39,15 @@ class Bing:
 			if not link:
 				continue
 			url = link.text
-			if Bing.USER_SUBDOMAIN in url:
-				urls.append(url)
+			if Bing.USER_SUBDOMAIN not in url:
+				continue
+			illegal = False
+			for illegal_url in Bing.ILLEGAL_URLS:
+				regex = re.compile(illegal_url)
+				if regex.match(url):
+					illegal = True
+					break
+			if illegal:
+				continue
+			urls.append(url)
 		return urls
