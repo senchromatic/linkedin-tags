@@ -1,12 +1,12 @@
 from collections import defaultdict
 from directories import Directories
 from operator import itemgetter
-from os import listdir, makedirs, path
+from os import listdir
 
 
 class Processor:
 	TOKEN_DELIMITER = ' '
-	WORD_DELIMITER = ','
+	WORD_DELIMITER = ' '
 	KEY_VALUE_DELIMITER = ':'
 	
 	def __init__(self, num_words=1):
@@ -37,18 +37,15 @@ class Processor:
 	
 	@staticmethod
 	def calculate_proportions(frequencies):
-		N_terms = float(sum(frequencies.values()))
+		n_terms = float(sum(frequencies.values()))
 		proportions = defaultdict(float)
 		for token,frequency in frequencies.items():
-			proportions[token] = frequency / N_terms
+			proportions[token] = frequency / n_terms
 		return proportions
 	
 	@staticmethod
 	def format_proportion(p):
 		return Processor.KEY_VALUE_DELIMITER.join([p[0], str(p[1])])
-	
-	def subdirectory_name(self):
-		return 'l' + str(self.num_words) + '/'
 	
 	def process_cleaned(self, filename):
 		with open(Directories.CLEANED_FOLDER + filename) as input:
@@ -59,10 +56,11 @@ class Processor:
 			props = Processor.calculate_proportions(total_freq)
 			ranklist = sorted(props.items(), key=itemgetter(1), reverse=True)
 			formatted = map(Processor.format_proportion, ranklist)
-		target_dir = Directories.PROCESSED_FOLDER + self.subdirectory_name()
-		if not path.exists(target_dir):
-			makedirs(target_dir)
+		target_dir = Directories.PROCESSED_FOLDER + Directories.subdirectory_name(self.num_words)
+		Directories.create_directory(target_dir)
 		with open(target_dir + filename, 'w') as output:
+			n_terms = sum(total_freq.values())  # total number of terms
+			output.write(str(n_terms) + '\n')
 			for s in formatted:
 				output.write(s + '\n')
 	
