@@ -9,7 +9,7 @@ class Directories:
 	COMBINED_SUBFOLDER = 'combined/'
 	FILTERED_FOLDER = 'filtered/'
 	HEADER_ROW = 'term,likelihood_ratio\n'
-	IGNORE = ['.keep']
+	IGNORE = ['.keep', 'linkedin_topics_longlist.txt']
 	
 	@staticmethod
 	def subdirectory_name(num_words):
