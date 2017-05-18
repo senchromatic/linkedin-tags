@@ -1,0 +1,193 @@
+agile software development
+ai
+algorithm
+algorithm design
+algorithmic
+algorithmic game theory
+algorithms
+algorithms and data structures
+analysis of algorithms
+android
+artificial intelligence
+aspect oriented programming
+automata
+automata theory
+automated reasoning
+automated theorem prover
+automated theorem provers
+big o
+big omega
+big theta
+bioinformatics
+cloud computing
+cmake
+coding theory
+compiler
+compiler design
+compiler optimization
+compiler theory
+compilers
+computability
+computability theory
+computation
+computational
+computational complexity
+computational geometry
+computational learning theory
+computational linguistics
+computer aided verification
+computer animation
+computer architecture
+computer engineering
+computer graphics
+computer networking
+computer programming
+computer security
+computer science
+computer systems
+computer vision
+concurrency
+concurrent programming
+configuration management
+correctness
+cpu
+data compression
+data encryption
+data structure
+data structures
+data structures and algorithms
+database
+database design
+databases
+decrypt
+decryption
+debugging
+debugging and testing
+distributed computing
+distributed systems
+embedded software
+embedded systems
+encrypt
+encryption
+ethernet
+evolutionary computing
+file
+file synchronization
+formal methods
+functional programming
+general
+general ai
+general aritficial intelligence
+git
+github
+gpu
+gpu architecture
+gpu programming
+graphic user interface
+graphic user interfaces
+gui
+hash table
+hash tables
+hci
+high performance computing
+hpc
+human computer interaction
+human language technology
+image processing
+imperative programming
+information retrieval
+information science
+information system
+information systems
+inheritance
+internet
+internet protocol
+ip
+ipv4
+ipv6
+iphone
+latency
+life critical application
+life critical applications
+linux
+little o
+mac
+mac os
+machine perception
+macos
+multicore
+multiprocessing
+multithreading
+natural language processing
+network management
+network security
+networking
+nlp
+nltk
+np
+np complete
+np completeness
+numerical analysis
+numerical programming
+object oriented programming
+oop
+openbsd
+opencv
+operating system
+operating systems
+operating system theory
+os
+p np
+pair programming
+parallel computing
+parallel processing
+pattern recognition
+pentesting
+plt
+polymorphism
+private key
+public key
+procedural programming
+programming language
+programming languages
+programming language theory
+quantum computing
+randomized algorithm
+randomized algorithms
+recursion theory
+refactoring
+relational database
+relational databases
+reverse engineering
+robotics
+rule based programming
+software architecture
+software design
+software engineering
+source code management
+spoj
+strong ai
+structured programming
+structured storage
+subversion
+svn
+symbolic computation
+tcp
+tcp ip
+tcpip
+testing
+testing and debugging
+theoretical computer science
+theory of computation
+throughput
+type theory
+unix
+user interface
+version control
+video game
+video game design
+video games
+web crawling
+web scraping
+windows
+wireless

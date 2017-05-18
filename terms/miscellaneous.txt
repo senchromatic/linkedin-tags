@@ -1,0 +1,89 @@
+accounting
+aerospace
+art
+arts
+anthropology
+astrology
+astrophysics
+astronomy
+biochemistry
+biology
+biophysics
+botany
+business
+chemical engineering
+chemistry
+cinema
+classical music
+classics
+cognitive science
+communication
+control theory
+dance
+digital media
+diet
+drawing
+ecology
+eecs
+electrical engineering
+engineering
+entrepreneur
+entrepreneurial
+entrepreneurship
+environment
+environmental
+exercise
+film
+fluid dynamics
+forensic
+gender
+geography
+geology
+health
+history
+international relations
+jazz
+kinesiology
+law
+leadership
+legal studies
+liberal arts
+life science
+life sciences
+literature
+management
+management science
+management studies
+marketing
+materials science
+mechanical engineering
+mechatronics
+medicine
+meteorology
+music
+neuroscience
+nursing
+nutrition
+operations managmeent
+operations research
+pharmaceutical
+pharmaceuticals
+philosophy
+photoshop
+physics
+political science
+politics
+psychology
+public health
+public relations
+social science
+social sciences
+sociology
+studio arts
+systems engineering
+systems science
+theater
+theatre
+travel
+visual arts
+zoology
