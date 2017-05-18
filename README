@@ -26,4 +26,15 @@ $ 3  # between 1 and the number above (but not exceeding it)
 $ less results/combined/*.txt
 $ :n  # next page
 $ :n
+...
 $ :q  # quit
+
+7. Filter combined results:
+$ python src/offline/terms_filter.py
+
+8. Show filtered results:
+$ less filtered/*.txt
+$ :n
+$ :n
+...
+$ :q
