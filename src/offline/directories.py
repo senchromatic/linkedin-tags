@@ -23,3 +23,7 @@ class Directories:
 	@staticmethod
 	def is_data(filename):
 		return filename not in Directories.IGNORE
+
+	@staticmethod
+	def only_data(all_files):
+		return filter(Directories.is_data, all_files)

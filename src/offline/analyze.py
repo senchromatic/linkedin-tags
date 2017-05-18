@@ -19,6 +19,11 @@ class Analysis:
 		self.corpus = None
 		self.overall_ci = {}
 	
+	@staticmethod
+	def enlist_processed(num_words):
+		all_files = listdir(Directories.PROCESSED_FOLDER + Directories.subdirectory_name(num_words))
+		return Directories.only_data(all_files)
+	
 	# cached storage
 	def load_proportions(self, document):
 		if document not in self.proportions:
@@ -48,11 +53,6 @@ class Analysis:
 		numerator = sum([(0.0 if term not in prop2 else prop1[term]*prop2[term]) for term in prop1.keys()])
 		denominator = Analysis.l2norm(prop1) * Analysis.l2norm(prop2)
 		return numerator / denominator
-	
-	@staticmethod
-	def enlist_processed(num_words):
-		all_files = listdir(Directories.PROCESSED_FOLDER + Directories.subdirectory_name(num_words))
-		return filter(Directories.is_data, all_files)
 	
 	def load_all_documents(self):
 		for document in Analysis.enlist_processed(self.num_words):

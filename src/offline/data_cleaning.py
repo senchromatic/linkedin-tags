@@ -7,7 +7,7 @@ class Cleaner:
 	@staticmethod
 	def enlist_raws():
 		all_files = listdir(Directories.RAW_FOLDER)  # relative filenames
-		return filter(Directories.is_data, all_files)
+		return Directories.only_data(all_files)
 	
 	@staticmethod
 	def clean_string(original):
