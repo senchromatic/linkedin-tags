@@ -28,7 +28,7 @@ class Combiner:
 			for line in input:
 				result = self.process(line)
 	
-	def save(self):
+	def save_corpus(self):
 		target_dir = Directories.RESULTS_FOLDER + Directories.COMBINED_SUBFOLDER
 		Directories.create_directory(target_dir)
 		with open(target_dir + self.document, 'w') as output:
@@ -47,4 +47,4 @@ if __name__ == '__main__':
 		for num_words in xrange(max_num_words):
 			print('\tincluding ' + Directories.subdirectory_name(num_words+1) + '...')
 			combine.include_subcorpus(num_words+1)
-		combine.save()
+		combine.save_corpus()
