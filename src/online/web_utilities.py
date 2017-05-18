@@ -15,7 +15,8 @@ class Utility:
 		r"CaptchaV2ChallengeForm",
 		r"uas-consumer-captcha-v2"
 	]
-	BAD_PAGES = ['/in/unavailable']
+	BAD_PAGES = ['/in/unavailable', '.../']
+	MAX_RECURSION_DEPTH = 10
 	
 	@staticmethod
 	def wait(caller, condition=None):
@@ -61,7 +62,9 @@ class Utility:
 		return False
 
 	@staticmethod
-	def load(caller, url, condition=None):
+	def load(caller, url, condition=None, recursion_depth=0):
+		if recursion_depth > Utility.MAX_RECURSION_DEPTH:
+			return None
 		Utility.check_captcha(caller.browser.page_source)
 		try:
 			caller.browser.get(url)
@@ -69,7 +72,7 @@ class Utility:
 		except TimeoutException as exception:
 			if Utility.is_profile_unavailable(caller):
 				return None
-			Utility.load(caller, url, condition)
+			Utility.load(caller, url, condition, recursion_depth+1)
 		except WebDriverException as exception:
 			# can't load page
 			return None
@@ -87,7 +90,7 @@ class Utility:
 
 	@staticmethod
 	def make_soup(caller, url, condition=None):
-		if not Utility.load(caller, url, condition):
+		if not Utility.load(caller, url, condition, 0):
 			return None
 		html = caller.browser.page_source
 		if Utility.is_false_lead(caller):
