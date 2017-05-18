@@ -21,8 +21,8 @@ class Analysis:
 	
 	@staticmethod
 	def enlist_processed(num_words):
-		all_files = listdir(Directories.PROCESSED_FOLDER + Directories.subdirectory_name(num_words))
-		return Directories.only_data(all_files)
+		target_dir = Directories.PROCESSED_FOLDER + Directories.subdirectory_name(num_words)
+		return Directories.data_filesnames(target_dir)
 	
 	# cached storage
 	def load_proportions(self, document):

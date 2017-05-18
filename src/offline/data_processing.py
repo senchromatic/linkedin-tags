@@ -14,8 +14,8 @@ class Processor:
 	
 	@staticmethod
 	def enlist_cleaned():
-		all_files = listdir(Directories.CLEANED_FOLDER)  # relative filenames
-		return Directories.only_data(all_files)
+		target_dir = Directories.CLEANED_FOLDER
+		return Directories.data_filenames(target_dir)
 	
 	def generate_frequencies(self, tokens):
 		profile_frequencies = defaultdict(int)

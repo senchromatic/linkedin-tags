@@ -10,8 +10,8 @@ class Combiner:
 	
 	@staticmethod
 	def enlist_analyzed():
-		all_files = listdir(Directories.RESULTS_FOLDER + Directories.subdirectory_name(1))
-		return Directories.only_data(all_files)
+		target_dir = Directories.RESULTS_FOLDER + Directories.subdirectory_name(1)
+		return Directories.data_filenames(target_dir)
 	
 	def process(self, line):
 		term_ratio = line.split(',')
