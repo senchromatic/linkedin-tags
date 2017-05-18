@@ -6,6 +6,9 @@ class Directories:
 	CLEANED_FOLDER = 'cleaned/'
 	PROCESSED_FOLDER = 'processed/'
 	RESULTS_FOLDER = 'results/'
+	COMBINED_SUBFOLDER = 'combined/'
+	
+	HEADER_ROW = 'term,likelihood_ratio\n'
 	
 	@staticmethod
 	def subdirectory_name(num_words):

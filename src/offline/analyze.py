@@ -105,7 +105,7 @@ class Analysis:
 			target_dir = Directories.RESULTS_FOLDER + Directories.subdirectory_name(self.num_words)
 			Directories.create_directory(target_dir)
 			with open(target_dir + document, 'w') as output:
-				output.write('term,likelihood_ratio\n')
+				output.write(Directories.HEADER_ROW)
 				for term_ratio in self.ratios[document]:
 					term = term_ratio[0]
 					ratio = term_ratio[1]
