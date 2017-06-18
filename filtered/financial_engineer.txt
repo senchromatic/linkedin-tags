@@ -1,405 +1,405 @@
 term,likelihood_ratio
-financial engineering,5.87119358466
-structured finance,4.36266677047
-mathematical finance,4.20669444462
-credit risk,4.05781751451
-risk management,3.90568102062
-fixed income,3.10652295371
-finance,3.02176987394
-financial mathematics,2.98661358173
-investment banking,2.85033207246
-corporate finance,2.77391762176
-quantitative finance,2.56228105994
-credit derivatives,2.39842534638
-mathematical,2.35194891668
-interest rate,2.34557208997
-mathematics,2.27043951814
-stochastic calculus,2.00306855458
-derivatives pricing,1.97037671257
-matlab,1.9131925073
-monte carlo,1.85989451542
-financial economics,1.83293801887
-mortgage backed,1.77755018349
-var,1.68693112686
-accounting,1.67410411814
-computational finance,1.67087946271
-investment,1.66873252709
-bank,1.56750236962
-otc,1.56236400651
-c,1.53450140402
-engineering,1.51870366107
-monte carlo simulation,1.48111941736
-economics,1.46844169695
-financial markets,1.42101616255
-law,1.41249711641
-equity,1.37545342567
-options,1.34805406487
-management,1.33137512182
-derivative pricing,1.32205593502
-asset backed,1.32127215551
-portfolio theory,1.25808987979
-financial econometrics,1.25550391434
-foreign exchange,1.23944433226
-financial instruments,1.22518250387
-volatility,1.20548599096
-chemical engineering,1.20238833436
-forecast,1.20044509314
-time series,1.15705784416
-securitization,1.12908627418
-financial derivatives,1.121239327
-computational,1.11323498099
-loan,1.10653328534
-visual basic,1.07149296698
-marathon,1.05216347928
-physics,1.04390432833
-probability,1.02928876175
-maths,1.00367751865
-philosophy,1.00304680599
-hedging,0.98895598217
-business,0.975161864171
-currency,0.9455935749
-r,0.941448370853
-economy,0.932274622587
-numerical analysis,0.931657634943
-java,0.917382314524
-simulation,0.915398382469
-futures,0.906847073413
-derivatives market,0.887970855816
-cdo,0.874998524285
-convertible bonds,0.870379920772
-sas,0.862814418905
-time series analysis,0.844184966328
-bonds,0.84077532337
-data analysis,0.824828814723
-interest rates,0.812084554378
-putnam,0.810556824784
-financial market,0.772542475153
-insurance,0.768963254611
-hedge,0.765242941028
-hedge fund,0.759185202649
-debt,0.754838997067
-mechanical engineering,0.743493880504
-statistics,0.741330565705
-financing,0.734410504576
-credit default swaps,0.728481155745
-stocks,0.725178813586
-math,0.720935010114
-equities,0.712579213766
-sql,0.675130735937
-general,0.665031734601
-computer programming,0.65910016219
-forecasting,0.635256255964
-portfolio optimization,0.62091037729
-bond,0.595393056571
-python,0.593656449808
-brownian,0.57444452728
-computer science,0.563078671391
-financial time series,0.558410287391
-regression,0.55167692856
-operations research,0.533120348037
-swaptions,0.523815926878
-commodities,0.511562316846
-regression analysis,0.499435998248
-forex,0.491318332303
-differential equations,0.468804721393
-perl,0.461848184612
-testing,0.457846181784
-arts,0.453937344052
-political science,0.452666602367
-unix,0.446067128884
-leadership,0.432968496351
-algorithms,0.428589717201
-probability theory,0.423066035538
-maple,0.41206029345
-s,0.411052939301
-mac,0.40605854704
-variance,0.402904836122
-electrical engineering,0.396345812884
-real estate,0.395474681288
-data structures,0.387257471137
-algorithmic,0.374320273594
-entrepreneur,0.370911594639
-estimation,0.366626257254
-aerospace,0.365192969416
-stochastic processes,0.363163341662
-entrepreneurship,0.344848235216
-programming languages,0.344753455571
-risk neutral,0.326176708041
-politics,0.323227490398
-latency,0.320219564114
-money market,0.320106449699
-range,0.317356158268
-tax,0.310411886542
-chemistry,0.307579175628
-communication,0.307353872648
-forensic,0.301631560934
-stock exchange,0.282468841206
-environment,0.277447222858
-default risk,0.276260783806
-stock market,0.273992598901
-scheme,0.269864669319
-dollar,0.263999801111
-partial differential equations,0.257938253339
-algorithm,0.24687192398
-data analyst,0.244745500868
-music,0.240903369214
-yield curve,0.230339949612
-travel,0.22920898487
-machine learning,0.224968561642
-macroeconomics,0.221308734593
-computer engineering,0.209270938419
-dance,0.208897315531
-big data,0.197016538117
-networking,0.19349099726
-database,0.189099224169
-algebra,0.181184953037
-arima,0.174986447051
-go,0.163597908783
-information systems,0.160385332015
-linear algebra,0.158135511197
-market microstructure,0.147584412207
-software engineering,0.147437257709
-marketing,0.142085920402
-margin,0.141974833614
-xml,0.141648830175
-robust,0.139626149508
-technical analysis,0.130583865381
-options pricing,0.129922071044
-history,0.129801405613
-ai,0.12852608425
-health,0.123435140145
-data mining,0.120735359757
-mergers,0.118368067454
-garch,0.109334207183
-entrepreneurial,0.102557656706
-scala,0.0999031116191
-wireless,0.0971240160977
-databases,0.0913376961786
-d,0.090366317993
-pca,0.0887161386213
-artificial intelligence,0.0870142056589
-mars,0.0851893229623
-linux,0.0825054558779
-ann,0.0805815332468
-statistical learning,0.0789721112991
-microeconomics,0.0700451278758
-statistical computing,0.0630283658682
-statistical inference,0.0604415750804
-population,0.0565693580009
-pl,0.0544925431266
-forecasts,0.0538349476989
-internet,0.0523919417152
-high performance computing,0.0508111842429
-predicting,0.0465711327982
-inflation,0.0460952394101
-momentum,0.0451729818924
-correlation,0.0442880708195
-github,0.0434382483212
-data visualization,0.0426332463854
-computation,0.0403506313205
-html,0.0370240182828
-literature,0.0348204589663
-art,0.0318206533299
-public relations,0.0312848391123
-inference,0.0312749525863
-spss,0.0247766175002
-javascript,0.0228275611103
-windows,0.0224248041474
-bayesian,0.0185359166341
-android,0.0184636936831
-survey,0.0165930569943
-photoshop,0.0119252553403
-trend stationary,4.18961619326e-05
-biology olympiad,4.18961619326e-05
-preferred stock,4.18961619326e-05
-financial securities,4.18961619326e-05
-stochastic differential equation,4.1826024795e-05
-gnp,3.60478887443e-05
-cross sectional,3.59876428885e-05
-random walk,3.59876428885e-05
-market participants,3.59876428885e-05
-random variables,3.59876428885e-05
-william lowell putnam,3.59273970327e-05
-collateralized debt obligation,3.59273970327e-05
-stationarity,3.17236414588e-05
-financial security,3.16706226024e-05
-financial derivative,3.16706226024e-05
-aime,2.84067851514e-05
-computability,2.84067851514e-05
-financial instrument,2.83593096686e-05
-correlation matrix,2.83593096686e-05
-bayesian data analysis,2.83118341858e-05
-martingale,2.57713095396e-05
-swaption,2.57713095396e-05
-robust regression,2.57282386569e-05
-mathematical optimization,2.57282386569e-05
-behavioural finance,2.57282386569e-05
-behavioural economics,2.57282386569e-05
-non stationary,2.57282386569e-05
-ordinary differential equations,2.56851677743e-05
-subprime,2.36203547866e-05
-coupon,2.36203547866e-05
-diet,2.36203547866e-05
-stochastic analysis,2.35808787373e-05
-covariance matrix,2.35808787373e-05
-legal studies,2.35808787373e-05
-fourier analysis,2.35808787373e-05
-brownian motion,2.35808787373e-05
-geology,2.18274389207e-05
-industrial organization,2.17909593238e-05
-field theory,2.17909593238e-05
-measure theory,2.17909593238e-05
-credit derivative,2.02733514627e-05
-confidence intervals,2.02733514627e-05
-data munging,2.02733514627e-05
-vector calculus,2.02733514627e-05
-groovy,1.90001656476e-05
-financial crisis,1.89684111971e-05
-number theory,1.89684111971e-05
-clearing house,1.89684111971e-05
-exchange rates,1.78330125664e-05
-financial regulation,1.78330125664e-05
-fluid dynamics,1.78330125664e-05
-skew,1.68633256947e-05
-mathematical economics,1.68351424876e-05
-abstract algebra,1.59505018074e-05
-capital structure,1.59505018074e-05
-credit default swap,1.59237995516e-05
-cointegration,1.51856697393e-05
-ficc,1.51856697393e-05
-artificial neural networks,1.5134910968e-05
-percentile,1.44739087581e-05
-outlier,1.44739087581e-05
-hypothesis testing,1.44497189195e-05
-reverse engineering,1.38069829318e-05
-linear programming,1.38069829318e-05
-convex optimization,1.38069829318e-05
-mathematical olympiad,1.38069829318e-05
-value at risk,1.37838690789e-05
-multithreading,1.32446735363e-05
-behavioral finance,1.32225380855e-05
-dynamic programming,1.32225380855e-05
-eurodollar,1.27098201919e-05
-refactoring,1.27098201919e-05
-high yield,1.17473875461e-05
-functional analysis,1.17473875461e-05
-stochastic process,1.17473875461e-05
-regime,1.13492209049e-05
-life science,1.13302532731e-05
-control theory,1.13302532731e-05
-analysis of algorithms,1.05658934799e-05
-mechatronics,1.026517781e-05
-combinatorics,1.026517781e-05
-discrete mathematics,1.02480219102e-05
-bootstrapping,9.95085344909e-06
-haskell,9.95085344909e-06
-materials science,9.93422287115e-06
-network management,9.93422287115e-06
-svn,9.65624335376e-06
-computer networking,9.64010514972e-06
-long short,9.64010514972e-06
-forth,9.37950312448e-06
-covariance,9.37950312448e-06
-complex analysis,9.3638274289e-06
-international relations,9.3638274289e-06
-object oriented programming,9.34815173333e-06
-theater,9.1190147951e-06
-subversion,9.1190147951e-06
-behavioral economics,9.10377444662e-06
-data structure,9.10377444662e-06
-experimental design,9.10377444662e-06
-business economics,9.10377444662e-06
-correlations,8.873352792e-06
-parallel computing,8.85852301178e-06
-ipo,8.6412558956e-06
-central bank,8.40752921402e-06
-international economics,8.40752921402e-06
-hackathon,8.21339872623e-06
-epidemiology,8.21339872623e-06
-distributed computing,8.19967190936e-06
-algorithm design,8.19967190936e-06
-bayesian statistics,8.19967190936e-06
-software architecture,8.00235069689e-06
-linear regression,7.81476580417e-06
-exotics,7.64898102424e-06
-information science,7.4659962521e-06
-nutrition,7.31580095192e-06
-fortran,7.31580095192e-06
-topology,7.16036519407e-06
-data cleaning,6.99998333365e-06
-factor analysis,6.7217064477e-06
-euro,6.47646557368e-06
-gui,6.35572904092e-06
-information theory,6.34510689685e-06
-management science,6.11759533683e-06
-pascal,6.02017059785e-06
-trending,6.02017059785e-06
-geography,5.91638304225e-06
-hpc,5.91638304225e-06
-programming language,5.71005897363e-06
-computer graphics,5.61686123944e-06
-bootstrap,5.53603387091e-06
-astrophysics,5.53603387091e-06
-liberal arts,5.52678166094e-06
-ml,5.44876962511e-06
-game theory,5.27373362071e-06
-theatre,5.20335368493e-06
-mean,5.05212580337e-06
-currencies,4.90976682535e-06
-social sciences,4.90156127829e-06
-exercise,4.84166844914e-06
-biostatistics,4.84166844914e-06
-astronomy,4.64865694494e-06
-julia,4.58782025943e-06
-neuroscience,4.58782025943e-06
-swift,4.52861426415e-06
-nursing,4.41483441373e-06
-pharmaceutical,4.36013920323e-06
-error,4.20416919749e-06
-chi,4.15471637438e-06
-functional programming,4.14777272228e-06
-information system,4.09959138212e-06
-database design,4.00662464523e-06
-git,3.96839131094e-06
-public health,3.96175905875e-06
-computer architecture,3.8750769887e-06
-embedded software,3.75216759524e-06
-sample,3.60632242221e-06
-drawing,3.60632242221e-06
-image processing,3.56429084684e-06
-logistic regression,3.52902284974e-06
-software design,3.39487453094e-06
-statistician,3.16110852094e-06
-bioinformatics,3.0031285409e-06
-computer vision,2.97338814743e-06
-pattern recognition,2.97338814743e-06
-stata,2.93008114441e-06
-computer systems,2.85582163559e-06
-leverage,2.79443372638e-06
-network security,2.78976347667e-06
-predict,2.52308214977e-06
-verilog,2.5057548372e-06
-trend,2.45520945193e-06
-user interface,2.37149418281e-06
-film,2.25836516003e-06
-debugging,2.1651993939e-06
-robotics,2.15252931756e-06
-natural language processing,2.00481956347e-06
-biology,1.95822604437e-06
-file,1.81431786547e-06
-prediction,1.77952209707e-06
-ip,1.77103540283e-06
-classification,1.70600963591e-06
-systems engineering,1.69538477863e-06
-deep learning,1.68005308575e-06
-operating systems,1.66500223865e-06
-medicine,1.65298709073e-06
-environmental,1.48828669243e-06
-assembly,1.4480013667e-06
-distributed systems,1.42358146112e-06
-php,1.42056195879e-06
-ruby,1.3068804772e-06
-cloud computing,1.29569581806e-06
-psychology,1.19879238865e-06
-signal processing,1.11872214991e-06
-embedded systems,1.04169890738e-06
+financial engineering,6.44941553569
+mathematical finance,4.6455599932
+structured finance,4.61089719746
+credit risk,4.3034839243
+risk management,4.14463072751
+financial mathematics,3.29819321001
+fixed income,3.19887530432
+quantitative finance,2.80941039803
+finance,2.71706032548
+credit derivatives,2.58737649641
+mathematical,2.57298571934
+interest rate,2.53282572973
+mathematics,2.46163683011
+stochastic calculus,2.21203967126
+derivatives pricing,2.17593754652
+matlab,2.10431827963
+monte carlo,2.04145603576
+corporate finance,1.9582487115
+financial economics,1.92879446858
+investment banking,1.85924149028
+mortgage backed,1.85706442261
+computational finance,1.84519486833
+var,1.83958370237
+c,1.6732816631
+otc,1.6652280586
+engineering,1.64100901185
+monte carlo simulation,1.63559089489
+derivative pricing,1.45998028707
+asset backed,1.45911488483
+options,1.45118263137
+bank,1.43102899205
+financial markets,1.43034571899
+portfolio theory,1.38934099918
+financial econometrics,1.3448602733
+economics,1.32563837489
+volatility,1.30690420765
+foreign exchange,1.29854206349
+management,1.29734261642
+law,1.29230022672
+financial instruments,1.28600899578
+time series,1.2641340566
+forecast,1.25578412759
+accounting,1.24214714079
+computational,1.21088494828
+securitization,1.20263846703
+investment,1.19585341075
+loan,1.18932508227
+visual basic,1.18327712554
+financial derivatives,1.14034863144
+physics,1.13541953575
+chemical engineering,1.12974755134
+probability,1.12907917056
+philosophy,1.06483366866
+hedging,1.0297262662
+numerical analysis,1.0288533227
+r,1.02730352411
+java,1.00213435175
+maths,1.0014859949
+simulation,0.991548705093
+derivatives market,0.980609091968
+marathon,0.979307991359
+currency,0.970276881697
+cdo,0.966311068209
+futures,0.962747231479
+sas,0.952026557325
+time series analysis,0.932228127619
+business,0.925423306242
+data analysis,0.900773652879
+interest rates,0.896805748202
+convertible bonds,0.895401380025
+economy,0.891348965011
+bonds,0.863159911789
+statistics,0.80857226484
+mechanical engineering,0.781265835508
+math,0.777566045313
+insurance,0.77291819983
+financial market,0.747722395522
+sql,0.740486034409
+credit default swaps,0.739294054122
+computer programming,0.709065575975
+portfolio optimization,0.685687209797
+general,0.658238709584
+python,0.652369224783
+hedge fund,0.647528382859
+hedge,0.643190167334
+brownian,0.634392077486
+financing,0.631026055815
+bond,0.628049910723
+computer science,0.617698142739
+financial time series,0.616649109412
+regression,0.606834805842
+forecasting,0.600989137115
+operations research,0.581440408368
+swaptions,0.578479983217
+debt,0.558813544088
+equity,0.543870161482
+regression analysis,0.543402102355
+commodities,0.528939594317
+stocks,0.528680125344
+forex,0.52162282843
+differential equations,0.517713044549
+perl,0.510045311988
+testing,0.501839675772
+unix,0.492617257495
+putnam,0.491611968914
+algorithms,0.471684705676
+equities,0.468062104123
+probability theory,0.467202678814
+arts,0.466120995612
+mac,0.440887496629
+leadership,0.436163389291
+electrical engineering,0.428941195601
+variance,0.418640559974
+data structures,0.418227892612
+algorithmic,0.411611939195
+s,0.408647732561
+estimation,0.397561873675
+stochastic processes,0.390083521576
+maple,0.383804802855
+political science,0.38049213891
+programming languages,0.374703021799
+aerospace,0.370545657163
+entrepreneur,0.367648472045
+risk neutral,0.360205349523
+latency,0.353636792682
+money market,0.35350178571
+entrepreneurship,0.338811969271
+communication,0.326635929803
+range,0.318168358274
+politics,0.313027457323
+real estate,0.312461831425
+default risk,0.305081904877
+scheme,0.298027018153
+chemistry,0.297936426921
+forensic,0.291695335913
+environment,0.291546977117
+partial differential equations,0.28483964906
+stock exchange,0.281544913549
+tax,0.276312697931
+algorithm,0.27196648564
+data analyst,0.269118843122
+yield curve,0.25437032306
+music,0.247672241108
+machine learning,0.24668517629
+travel,0.235774415102
+dollar,0.231768892066
+computer engineering,0.230431139535
+stock market,0.22821007218
+dance,0.225649681923
+macroeconomics,0.213976246263
+big data,0.212717149656
+database,0.205106563462
+algebra,0.200092892945
+networking,0.197349627493
+arima,0.193247578541
+linear algebra,0.174633086951
+information systems,0.167128836692
+go,0.165697863713
+market microstructure,0.162981248922
+software engineering,0.162349346455
+xml,0.155281561922
+marketing,0.147816578925
+robust,0.146723826902
+options pricing,0.143476285088
+ai,0.138968416721
+margin,0.136362023648
+data mining,0.132995592835
+history,0.122814117252
+technical analysis,0.120804020007
+garch,0.12074403681
+health,0.120548271693
+scala,0.110328722931
+wireless,0.100788483999
+entrepreneurial,0.0992431023048
+databases,0.0982394362398
+pca,0.0979743189793
+artificial intelligence,0.095497235024
+d,0.0951753373321
+linux,0.0909939986741
+mars,0.0888084286537
+statistical learning,0.087210929774
+ann,0.0822302769025
+microeconomics,0.0761355081162
+mergers,0.0710519662795
+statistical computing,0.0696038405527
+statistical inference,0.0667471808006
+population,0.0609241034414
+high performance computing,0.0561104780763
+pl,0.0530774516899
+predicting,0.0514311682572
+forecasts,0.0503910412237
+inflation,0.0503910412237
+github,0.0479713440569
+correlation,0.0479713440569
+momentum,0.0479713440569
+data visualization,0.0470809756388
+computation,0.0437856740389
+internet,0.0427134367305
+html,0.0407635937326
+literature,0.0360024034258
+art,0.0346472327423
+inference,0.0345387184192
+public relations,0.0338614887901
+spss,0.0267947246284
+javascript,0.0250707411018
+windows,0.0247502641639
+bayesian,0.0204702703272
+android,0.0202328785585
+survey,0.0164375732429
+photoshop,0.0131697382903
+trend stationary,4.62670127895e-05
+biology olympiad,4.62670127895e-05
+preferred stock,4.62670127895e-05
+financial securities,4.62670127895e-05
+stochastic differential equation,4.61882300243e-05
+gnp,3.9809754752e-05
+cross sectional,3.97420825418e-05
+random walk,3.97420825418e-05
+market participants,3.97420825418e-05
+random variables,3.97420825418e-05
+william lowell putnam,3.96744103316e-05
+collateralized debt obligation,3.96744103316e-05
+stationarity,3.50342398556e-05
+financial derivative,3.49746854987e-05
+aime,3.13712447389e-05
+computability,3.13712447389e-05
+financial instrument,3.13179170733e-05
+correlation matrix,3.13179170733e-05
+bayesian data analysis,3.12645894078e-05
+martingale,2.84607375019e-05
+swaption,2.84607375019e-05
+robust regression,2.84123573804e-05
+mathematical optimization,2.84123573804e-05
+behavioural finance,2.84123573804e-05
+financial security,2.84123573804e-05
+behavioural economics,2.84123573804e-05
+non stationary,2.84123573804e-05
+ordinary differential equations,2.8363977259e-05
+subprime,2.60853145079e-05
+coupon,2.60853145079e-05
+diet,2.60853145079e-05
+stochastic analysis,2.60409723458e-05
+covariance matrix,2.60409723458e-05
+fourier analysis,2.60409723458e-05
+brownian motion,2.60409723458e-05
+industrial organization,2.40643180984e-05
+legal studies,2.40643180984e-05
+field theory,2.40643180984e-05
+measure theory,2.40643180984e-05
+confidence intervals,2.23883845346e-05
+data munging,2.23883845346e-05
+vector calculus,2.23883845346e-05
+groovy,2.09829740332e-05
+number theory,2.09473052917e-05
+clearing house,2.09473052917e-05
+geology,1.97269889613e-05
+credit derivative,1.96934552571e-05
+exchange rates,1.96934552571e-05
+fluid dynamics,1.96934552571e-05
+skew,1.86231388355e-05
+financial crisis,1.85914815557e-05
+mathematical economics,1.85914815557e-05
+abstract algebra,1.76145500048e-05
+financial regulation,1.76145500048e-05
+credit default swap,1.75845562294e-05
+cointegration,1.67704069268e-05
+ficc,1.67704069268e-05
+artificial neural networks,1.67133912501e-05
+outlier,1.59843683621e-05
+reverse engineering,1.52474067543e-05
+hypothesis testing,1.52474067543e-05
+linear programming,1.52474067543e-05
+convex optimization,1.52474067543e-05
+mathematical olympiad,1.52474067543e-05
+value at risk,1.52214437151e-05
+multithreading,1.46268532505e-05
+behavioral finance,1.46019892187e-05
+dynamic programming,1.46019892187e-05
+eurodollar,1.403618396e-05
+refactoring,1.403618396e-05
+functional analysis,1.29729423892e-05
+stochastic process,1.29729423892e-05
+regime,1.25335959657e-05
+control theory,1.2512290242e-05
+capital structure,1.20850984374e-05
+analysis of algorithms,1.16678523867e-05
+mechatronics,1.13364248734e-05
+combinatorics,1.13364248734e-05
+discrete mathematics,1.13171542092e-05
+bootstrapping,1.09892984173e-05
+materials science,1.09706178301e-05
+network management,1.09706178301e-05
+haskell,1.06639435581e-05
+svn,1.06639435581e-05
+forth,1.03583234191e-05
+covariance,1.03583234191e-05
+complex analysis,1.03407154202e-05
+object oriented programming,1.03231074212e-05
+subversion,1.00706511875e-05
+behavioral economics,1.00535321998e-05
+computer networking,1.00535321998e-05
+data structure,1.00535321998e-05
+experimental design,1.00535321998e-05
+correlations,9.79935252028e-06
+parallel computing,9.78269471054e-06
+theater,9.54303458016e-06
+life science,9.52681248278e-06
+central bank,9.28465062054e-06
+epidemiology,9.07052732189e-06
+algorithm design,9.05510843499e-06
+bayesian statistics,9.05510843499e-06
+international economics,9.05510843499e-06
+hackathon,8.8522493665e-06
+distributed computing,8.83720152816e-06
+software architecture,8.83720152816e-06
+linear regression,8.63004669066e-06
+business economics,8.63004669066e-06
+exotics,8.44720842165e-06
+nutrition,8.07925852381e-06
+fortran,8.07925852381e-06
+topology,7.90760188557e-06
+data cleaning,7.73026138608e-06
+information science,7.57334111606e-06
+high yield,7.57334111606e-06
+percentile,7.43559271967e-06
+factor analysis,7.42295304203e-06
+international relations,7.42295304203e-06
+information theory,7.00706444352e-06
+gui,6.89075656053e-06
+euro,6.89075656053e-06
+long short,6.87904304447e-06
+pascal,6.6484194862e-06
+trending,6.6484194862e-06
+management science,6.63711791652e-06
+geography,6.31650198973e-06
+programming language,6.30576464327e-06
+computer graphics,6.20284398204e-06
+bootstrap,6.11375948713e-06
+astrophysics,6.11375948713e-06
+hpc,6.11375948713e-06
+ml,6.01738856779e-06
+liberal arts,5.82391930491e-06
+game theory,5.82391930491e-06
+theatre,5.66157504829e-06
+biostatistics,5.34693186792e-06
+mean,5.27386389471e-06
+social sciences,5.26489891823e-06
+exercise,5.20284142151e-06
+ipo,5.06659273258e-06
+currencies,5.06659273258e-06
+astronomy,5.06659273258e-06
+swift,5.0012081517e-06
+julia,4.87555452846e-06
+neuroscience,4.81515146641e-06
+nursing,4.69888372179e-06
+error,4.64290483211e-06
+functional programming,4.58049166113e-06
+information system,4.52728376564e-06
+database design,4.42461820261e-06
+git,4.38252177262e-06
+computer architecture,4.23309103825e-06
+public health,4.18785841078e-06
+embedded software,4.14361472647e-06
+sample,3.9826683092e-06
+drawing,3.9826683092e-06
+image processing,3.93613759356e-06
+logistic regression,3.89719023595e-06
+chi,3.75543059985e-06
+software design,3.74904679243e-06
+statistician,3.49099303814e-06
+pharmaceutical,3.49099303814e-06
+bioinformatics,3.31652667766e-06
+computer vision,3.28358852631e-06
+pattern recognition,3.28358852631e-06
+computer systems,3.15375680094e-06
+network security,3.08080707578e-06
+leverage,2.78638389643e-06
+stata,2.78638389643e-06
+verilog,2.76724835084e-06
+predict,2.67548203085e-06
+trend,2.60644744818e-06
+user interface,2.60201678487e-06
+debugging,2.39115343448e-06
+robotics,2.33617378291e-06
+natural language processing,2.21390964229e-06
+film,2.17410003533e-06
+file,1.99390462403e-06
+prediction,1.96522787306e-06
+ip,1.90148662212e-06
+classification,1.87544457666e-06
+systems engineering,1.85532535466e-06
+biology,1.85012160246e-06
+operating systems,1.83870431763e-06
+deep learning,1.82238489029e-06
+medicine,1.68379661966e-06
+assembly,1.59911052207e-06
+distributed systems,1.57209715449e-06
+php,1.55701198578e-06
+environmental,1.47924931458e-06
+ruby,1.43330621139e-06
+cloud computing,1.27315697464e-06
+psychology,1.23388303361e-06
+signal processing,1.23178557671e-06
+embedded systems,1.14721910784e-06
