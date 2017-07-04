@@ -5,3 +5,4 @@ src/online/*.pyc
 cleaned/*.txt
 processed/**/*.txt
 results/**/*.txt
+TODO.txt
